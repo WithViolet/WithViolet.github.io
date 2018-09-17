@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="能饮一杯否">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="中国剩余定理 过程有些坎坷，因为忽视了exgcd里面一点小变化，半天无法通过样例不过终于搞懂了1234567891011121314151617181920题目如下：数一堆硬币，x1个一拨，则余下y1个；             x2个一拨，则余下y2个；             。。。             xn个一拨，则余下yn个；问最少有几个硬币输入描述第一行输入整数n第二行是x1 x2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中国剩余定理">
+<meta property="og:url" content="http://yoursite.com/2018/09/17/中国剩余定理/index.html">
 <meta property="og:site_name" content="能饮一杯否">
+<meta property="og:description" content="中国剩余定理 过程有些坎坷，因为忽视了exgcd里面一点小变化，半天无法通过样例不过终于搞懂了1234567891011121314151617181920题目如下：数一堆硬币，x1个一拨，则余下y1个；             x2个一拨，则余下y2个；             。。。             xn个一拨，则余下yn个；问最少有几个硬币输入描述第一行输入整数n第二行是x1 x2">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-17T13:48:13.565Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="能饮一杯否">
+<meta name="twitter:title" content="中国剩余定理">
+<meta name="twitter:description" content="中国剩余定理 过程有些坎坷，因为忽视了exgcd里面一点小变化，半天无法通过样例不过终于搞懂了1234567891011121314151617181920题目如下：数一堆硬币，x1个一拨，则余下y1个；             x2个一拨，则余下y2个；             。。。             xn个一拨，则余下yn个；问最少有几个硬币输入描述第一行输入整数n第二行是x1 x2">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/17/中国剩余定理/"/>
 
 
 
 
 
-  <title>能饮一杯否</title>
+  <title>中国剩余定理 | 能饮一杯否</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +227,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -256,9 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/17/中国剩余定理/" itemprop="url">中国剩余定理</a></h1>
+          <h1 class="post-title" itemprop="name headline">中国剩余定理</h1>
         
 
         <div class="post-meta">
@@ -308,17 +309,15 @@
       
 
       
-        
-          <h1 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h1><hr>
+        <h1 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h1><hr>
 <p>过程有些坎坷，因为忽视了exgcd里面一点小变化，半天无法通过样例<br>不过终于搞懂了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">题目如下：</span><br><span class="line">数一堆硬币，x1个一拨，则余下y1个；</span><br><span class="line">             x2个一拨，则余下y2个；</span><br><span class="line">             。。。</span><br><span class="line">             xn个一拨，则余下yn个；</span><br><span class="line"></span><br><span class="line">问最少有几个硬币</span><br><span class="line"></span><br><span class="line">输入描述</span><br><span class="line">第一行输入整数n</span><br><span class="line">第二行是x1 x2 .. xn</span><br><span class="line">第三行是y1 y2 .. yn</span><br><span class="line">输出描述</span><br><span class="line">最少的硬币数目</span><br><span class="line">输入样例</span><br><span class="line">2</span><br><span class="line">14 57</span><br><span class="line">5 56</span><br><span class="line">输出样例</span><br><span class="line">341</span><br></pre></td></tr></table></figure></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/17/中国剩余定理/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+<p>设硬币数为N，可得<br>N = k1x1 + y1<br>N = k2x2 + y2<br>…<br>N = knxn + yn </p>
+<h2 id="主要思路："><a href="#主要思路：" class="headerlink" title="主要思路："></a>主要思路：</h2><p>把多个式子化为一个，最后求N = km + r的N的最小解<br>那么首先，怎么把两个式子化为一个呢？<br>有 k1x1 + y1 = k2x2 + y2<br>k1x1 - k2x2 = y2 - y1<br>是不是可以套用exgcd求解呀<br>ax + by = n<br>a相当于x1<br>b相当于x2<br>x = k1, y = k2, n = y2 - y1<br>(为何不是y = -k2？k2的值可以为负数或正数，带不带负号无所谓)<br>设d = exgcd(m1,m2,k1,k2)<br>if(y2 - y1) % d != 0 return -1无解<br>如果有解，我们有公式，通解为<br>x = x0 + b / gcd <em> t<br>y = y0 - a / gcd </em> t(t为正整数)<br>我们要求出前面两个式子的关于N的最小解，再继续和后面的式子合并才能得到最小解对吧，那么我们要取x的最小值，也就是k1的最小值<br>我们根据题意有<br>k1 <em> m1 + a1 = k2 </em> m2 + a2<br>则k1m1 = a2 - a1(mod m2)<br>等式两边同时除以gcd<br>k1m1 = a2 - a1(mod m2 / gcd)</p>
+<p>又比如：<br>N = k1m1 + r1<br>N = k2m2 + r2<br>把N看作解系<br>1.r1 = r2 = 0那么合并之后N = k<em>lcm(m1,m2) + 0<br>2.r1 != 0,r2 = 0,合并后 N = k</em>lcm(m1,m2) + r1<br>3.r1 = 0,r2 != 0,合并后 N = k<em>lcm(m1,m2) + r2<br>4.r1,r2 != 0,合并后     N = k</em>lcm(m1,m2) + gcd(m1,m2)</p>
+<p>所以用k1m1 = a2 - a1(mod m2 / gcd)<br>求出k1之后，我们可以求出R<br>R = k1m1 + r1<br>N = k<em>M + R<br>N = k</em>lcm(m1,m2) + R<br>lcm(m1,m2) = m1*m2/gcd<br>这样就可以求出合并后的式子，就可以继续和剩下的式子合并</p>
+<h2 id="代码实现如下"><a href="#代码实现如下" class="headerlink" title="代码实现如下:"></a>代码实现如下:</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX 10005</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line">ll m[MAX],r[MAX];</span><br><span class="line"><span class="function">ll <span class="title">exgcd</span><span class="params">(ll a, ll b,ll &amp;x,ll &amp;y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(b == <span class="number">0</span>)&#123;</span><br><span class="line">		x = <span class="number">1</span>; y = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">return</span> a;</span><br><span class="line">	&#125;</span><br><span class="line">	ll d = exgcd(b, a % b, y, x);<span class="comment">//注意这里y和x的调换</span></span><br><span class="line">	y -= (a / b)*x;<span class="comment">//后面只有一行了，比之前扩展gcd里的模板简洁一些</span></span><br><span class="line">	<span class="keyword">return</span> d;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function">ll <span class="title">remaind</span><span class="params">(ll m[],ll r[],ll n)</span></span>&#123;</span><br><span class="line">	ll M = m[<span class="number">0</span>],R = r[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++)&#123;</span><br><span class="line">		ll x,y;</span><br><span class="line">		ll d = exgcd(M, m[i], x, y);</span><br><span class="line">		<span class="keyword">if</span>((r[i] - R) % d) <span class="keyword">return</span> <span class="number">-1</span>;<span class="comment">//无解</span></span><br><span class="line">		x = (r[i] - R) / d * x % (m[i] / d);</span><br><span class="line">                <span class="comment">//k1m1 = a2 - a1(mod m2 / gcd)</span></span><br><span class="line">		R += M * x;</span><br><span class="line">                <span class="comment">//R = m1k1 + r1</span></span><br><span class="line">		M = M / d * m[i];</span><br><span class="line">                <span class="comment">//lcm = M * m[i] / gcd</span></span><br><span class="line">		R %= M;<span class="comment">//范围在- ~ +</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> R &gt; <span class="number">0</span> ? R : R + M;<span class="comment">//调整范围在0 ~ +</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	ll n;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;m[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;r[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;remaind(m,r,n)&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -335,141 +334,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/16/扩展GCD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Violet.C">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="能饮一杯否">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/16/扩展GCD/" itemprop="url">扩展GCD</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-16T09:47:44+08:00">
-                2018-09-16
-              </time>
+              <a href="/2018/09/16/扩展GCD/" rel="next" title="扩展GCD">
+                <i class="fa fa-chevron-left"></i> 扩展GCD
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h1 id="GCD"><a href="#GCD" class="headerlink" title="GCD"></a>GCD</h1><p>gcd就是最大公约数的意思</p>
-<p>我们首先要了解扩展gcd，首先要知道gcd，也就是欧几里得算法</p>
-<p>即gcd(a,b) = gcd(b, a mod b)   a,b的最大公因数 = b,a mod b的最大公因数</p>
-<p>证明如下：</p>
-<p>a = kb + r 则 r = a mod b</p>
-<p>假设d 为 a b 的最大公约数（d = gcd（a,b））<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/16/扩展GCD/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -479,261 +365,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/16/取石子系列总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Violet.C">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="能饮一杯否">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/16/取石子系列总结/" itemprop="url">取石子总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-16T09:36:54+08:00">
-                2018-09-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="取石子（一）"><a href="#取石子（一）" class="headerlink" title="取石子（一）"></a>取石子（一）</h3><p>基础的<strong>巴什博奕</strong><br>巴什博奕的重点是只有一堆，<br>如果n % (m + 1) != 0 则先手赢，如果用普通的数组会TLE。<br>证明：如果n = m + 1,先手最多拿m个，肯定有剩下的，所以先手必输，<br>所以碰到k(m + 1)的局面的人必输。<br>那么如果n = k(m + 1) + s，这个k 就是系数，s &lt; m + 1,那么只要先手拿掉s个，这样后手面对的就是k(m + 1)局面，所以先手在<br>n % (m + 1) != 0时必输。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/16/取石子系列总结/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/26/article/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Violet.C">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="能饮一杯否">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/26/article/" itemprop="url">2018的目标（可能是flag</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-26T15:00:47+08:00">
-                2018-08-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>上学期的总结，下学期的展望<br>PAT乙级终于刷完了，咻咻</p>
-<p>&emsp;&emsp;上午画了画，下午不知道要做什么，索性把博客再搭好了，以后应该会好好用吧（希望自己下学期做个人）</p>
-<p>&emsp;&emsp;上学期一开始还精神挺好的，到了中后半段全部垮掉，陷入了拖延，焦虑，和对自己深深的否定当中，现在回头看，其实没有必要，中午不能看视频，一看就对手机停不下来，也不要去小吃街吃了……i don’t have so much money.</p>
-<p>&emsp;&emsp;在启明星的这半年，了解了很多以往不曾了解的东西，要向大佬们学习的好的东西，摒弃坏的东西。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/26/article/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -741,6 +377,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -761,8 +401,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -804,6 +453,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#中国剩余定理"><span class="nav-number">1.</span> <span class="nav-text">中国剩余定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主要思路："><span class="nav-number">1.1.</span> <span class="nav-text">主要思路：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现如下"><span class="nav-number">1.2.</span> <span class="nav-text">代码实现如下:</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -950,6 +615,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
